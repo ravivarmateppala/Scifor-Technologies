@@ -1,0 +1,37 @@
+Q1:Text processing is the automated process of analyzing and sorting unstructured text data to gain valuable insights. Using NLP and machine learning, subfields of artificial intelligence, text processing tools are able to automatically understand human language and extract value from text data.
+
+ code to perform text processing
+import nltk
+from nltk.tokenize import word_tokenize
+tokens = word_tokenize("The quick brown fox jumps over the lazy dog")
+nltk.download('stopwords')
+
+
+Q2: SPACY: spacy is an object-oriented library where we need to download packages related to English text.It Provides the most efficient NLP algorithm for a given task.
+
+NLP toolkit:NLTK is mainly a string processing library.NLTK provides access to many algorithms, and if you care about specific algorithms and customizations, then you can go with NLTK.
+*code where nlp used
+import pathlib
+file_name = "introduction.txt"
+introduction_doc = nlp(pathlib.Path(file_name).read_text(encoding="utf-8"))
+print (token.text for token in introduction_doc)
+['This', 'tutorial', 'is', 'about', 'Natural', 'Language',
+'Processing', 'in', 'spaCy', '.', '\n']
+
+Q3:  Neural networks: Neural networks, are a subset of machine learning and the heart of deep learning algorithms. Their name and structure are inspired by the human brain.
+
+ ANNs are comprised of a node layers, containing an input layer, one or more hidden layers, and an output layer. Each node, or artificial neuron, connects to another and has an associated weight and threshold. If the output of any individual node is above the specified threshold value, that node is activated, sending data to the next layer of the network. Otherwise, no data is passed along to the next layer of the network.Neural networks rely on training data to learn and improve their accuracy over time.
+
+ Deep Learning: Uses artificial neural network architecture to learn the hidden patterns and relationships in the dataset.
+ Requires the larger volume of dataset compared to machine learning
+ Better for complex task like image processing,Takes more time to train the modelRelevant features are automatically extracted from images. It is an end-to-end learning process. it works like the black box interpretations of the result are not easy.	It requires a high GPU.
+
+ Q4: A hyperparameter is a parameter of the model whose value influences the learning process and whose value cannot be estimated from the training data. Hyperparameters are configured externally before starting the model learning/training process. Hyperparameter tuning is the process of finding the optimal hyperparameters for any given machine learning algorithm.
+
+ Q5: Ensemble learning helps improve machine learning results by combining several models. This approach allows the production of better predictive performance compared to a single model. Basic idea is to learn a set of classifiers (experts) and to allow them to vote.
+ The three main classes of ensemble learning methods are bagging, stacking, and boosting, and it is important to both have a detailed understanding of each method and to consider them on your predictive modeling project
+
+ Q6: Model Selection and Evaluation is a hugely important procedure in the machine learning workflow. This is the section of our workflow in which we will analyse our model. We look at more insightful statistics of its performance and decide what actions to take in order to improve this model.
+
+ Q7: Feature engineering enables you to build more complex models than you could with only raw data. It also allows you to build interpretable models from any amount of data.
+ Feature selection will help you limit these features to a manageable number.
